@@ -1,5 +1,5 @@
 public class Animal {
-    public void method(){
-        System.out.println("I'm an animal");
+    public void talk(){
+        System.out.println("I am an animal");
     }
 }
