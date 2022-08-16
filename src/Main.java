@@ -1,13 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new Animal();
-        Animal dog = new Dog();
-        Animal cat = new Cat();
-        voice(animal);
-        voice(dog);
-        voice(cat);
-    }
-    public static void voice(Animal animal){
-        animal.talk();
+        Dancer dancer = new Dancer("Anna Pavlova", 23);
+        TiktonikDancer tdancer = new TiktonikDancer("Ranz Kule", 25);
+        BreakDancer bdancer1 = new BreakDancer("Tyrone Smith", 30);
+        BreakDancer bdancer2 = new BreakDancer("Douglas Colon", 29);
+        Dancer[] dancers = {dancer, (Dancer) tdancer, (Dancer) bdancer1, (Dancer) bdancer2};
+        for (Dancer d: dancers){d.dance();}
     }
 }
